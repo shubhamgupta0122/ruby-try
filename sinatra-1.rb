@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 
+# uncomment the below two lines when running on c9.io
+# set :bind, ENV["IP"]
+# set :port, ENV["PORT"]
+
 get '/' do
   "Hello World!"
 end
